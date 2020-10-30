@@ -57,11 +57,11 @@
               zoom: 10
             });
 
-            L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.png', {
-                attribution: 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.',
-                maxZoom: 15,
-                minZoom: 10,
-           }).addTo(map);
+            L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+              attribution: 'Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL.',
+              maxZoom: 11,
+              minZoom: 5
+            }).addTo(map);
 
             function getColor(value) {
                 return value > 92582 ? '#00F11D':
